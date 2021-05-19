@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="text" id="ta">
+<button id="doi" onclick="dich()">Dịch</button>
+<p id="b"></p>
+<script>
+let a = ['anh','yêu', 'em'];
+let b = [ 'i', 'love', 'you'];
+console.log(a)
+function dich() {
+  for (let i=0; i< a.length; i++) {
+    if (document.getElementById('ta').value ==a[i]) {
+        document.getElementById('b').innerHTML = b[i]
+    }
+  }
+}
+</script>
 </body>
 </html>
