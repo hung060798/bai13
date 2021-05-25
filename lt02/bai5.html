@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1 =[];
+    let str2 = [];
+  let a = prompt(' nhập số lượng chuỗi mảng 1');
+  for (let i =0; i<a; i++) {
+      str1[i] = prompt ('nhập ký tự');
+  };
+  let b = prompt(' nhập số lượng chuỗi mảng 2');
+  for (let j = 0; j<b; j++) {
+      str2 [j]  = prompt(' nhập  ký tự');
+  };
+  if (a==b){
+      let check = true;
+      for (let c=0; c<a;c ++) {
+          if (str1[c]==str2[c]){
+              check = true;
+              continue;
+          } else {
+              check = false;
+              break;
+          }
+      }
+
+      if (check){
+          document.write('2 mảng giống nhau')
+      }else {
+          document.write(' 2 mảng khác nhau')
+      }
+  } else document.write('2 mảng khác nhau')
+</script>
+</body>
+</html>

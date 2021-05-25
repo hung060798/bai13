@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= +prompt('nhập số lượng phần tử:');
+    var str =[];
+    for (let i=0; i<a; i++) {
+        str[i] = prompt('kí tự')
+    };
+    for (let i=0;i<str.length;i++){
+        for (let j=i+1;j<(str.length);j++){
+            b=str[i];
+            str[i]=str[j];
+            str[j]=b;
+        }
+    };
+    console.log(str);
+    document.write(str.toString())
+</script>
+</body>
+</html>
